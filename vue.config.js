@@ -15,13 +15,19 @@ module.exports = {
   devServer: {
     // 此代理仅针对本地开发服务（npm run serve）
     proxy: {
-      '/boss': {
+      '/api/boss': {
         target: 'http://eduboss.lagou.com',
-        changeOrigin: true // 把请求头中的 host 配置为 target
+        changeOrigin: true, // 把请求头中的 host 配置为 target
+        pathRewrite: {
+          '^/api/': ''
+        }
       },
-      '/front': {
+      '/api/front': {
         target: 'http://edufront.lagou.com',
-        changeOrigin: true
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api/': ''
+        }
       }
     }
   }
