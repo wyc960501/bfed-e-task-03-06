@@ -78,7 +78,7 @@ export default Vue.extend({
           this.$message.success('登录成功')
         }
       } catch (err) {
-        console.log('登录失败', err)
+        console.log('登录失败1', err)
       }
 
       this.isLoginLoading = false
