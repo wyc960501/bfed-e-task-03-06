@@ -32,8 +32,8 @@ export default Vue.extend({
   data () {
     return {
       form: {
-        phone: '18201288771',
-        password: '111111'
+        phone: '',
+        password: ''
       },
       rules: {
         phone: [
@@ -59,6 +59,7 @@ export default Vue.extend({
 
         // 2、验证通过 -> 提交表单
         const { data } = await login(this.form)
+        console.log(data)
 
         // 3、处理请求结果
         // 失败：给出提示
