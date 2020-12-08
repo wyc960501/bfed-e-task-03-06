@@ -14,7 +14,7 @@ export const login = (data: User) => {
   return request({
     method: 'POST',
     url: '/front/user/login',
-    // headers: { 'content-type': 'application/x-www-form-urlencoded' },
+    headers: { 'content-type': 'application/x-www-form-urlencoded' },
     data: qs.stringify(data) // axios 默认发送的是 application/json 格式数据
   })
 }
