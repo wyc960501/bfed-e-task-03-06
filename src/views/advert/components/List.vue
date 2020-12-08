@@ -8,7 +8,7 @@
       <el-table
         :data="adverts"
         v-loading="isLoading"
-        stripe="true"
+        :stripe="true"
         border
         style="width: 100%;margin-bottom:20px"
       >

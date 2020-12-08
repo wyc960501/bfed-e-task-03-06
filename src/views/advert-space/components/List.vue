@@ -9,7 +9,7 @@
       <el-table
         :data="advertSpaces"
         v-loading="loading"
-        stripe="true"
+        :stripe="true"
         border
         style="width: 100%;margin-bottom:20px"
       >

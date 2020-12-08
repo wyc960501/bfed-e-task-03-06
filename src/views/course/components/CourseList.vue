@@ -32,7 +32,7 @@
       <el-table
         :data="courses"
         v-loading="loading"
-        stripe="true"
+        :stripe="true"
         border
         style="width: 100%;margin-bottom:20px;">
         <el-table-column

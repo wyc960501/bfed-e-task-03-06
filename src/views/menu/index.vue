@@ -6,7 +6,7 @@
     </div>
     <el-table
     :data="menus"
-    stripe="true"
+    :stripe="true"
     border
     style="width: 100%">
       <el-table-column

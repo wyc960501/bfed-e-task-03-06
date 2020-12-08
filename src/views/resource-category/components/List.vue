@@ -7,7 +7,7 @@
       <el-table
         :data="categories"
         v-loading="isLoading"
-        stripe="true"
+        :stripe="true"
         border
       >
         <el-table-column
