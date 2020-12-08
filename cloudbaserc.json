@@ -1,1 +1,15 @@
-{"envId":"cloud-base-2gl1iki98a3b5007","version":"2.0","$schema":"https://framework-1258016615.tcloudbaseapp.com/schema/latest.json"}
+{
+  "envId":"cloud-base-2gl1iki98a3b5007",
+  "version":"2.0",
+  "$schema":"https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+  "routes": [
+    {
+      "src": "/boss/(.*)",
+      "dest": "/api/proxy"
+    },
+    {
+      "src": "/front/(.*)",
+      "dest": "/api/proxy"
+    }
+  ]
+}

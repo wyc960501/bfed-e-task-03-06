@@ -59,7 +59,6 @@ export default Vue.extend({
 
         // 2、验证通过 -> 提交表单
         const { data } = await login(this.form)
-        console.log(data)
 
         // 3、处理请求结果
         // 失败：给出提示
@@ -78,7 +77,7 @@ export default Vue.extend({
           this.$message.success('登录成功')
         }
       } catch (err) {
-        console.log('登录失败1', err)
+        console.log('登录失败', err)
       }
 
       this.isLoginLoading = false
